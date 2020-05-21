@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">test2.1.9</string>
+    <string name="lvButton">ボタン</string>
+    <string name="dialog_btn_ok">ok</string>
+    <array name="SNS">
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>Line</item>
+    </array>
+
+</resources>
