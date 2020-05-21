@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">test2.1.6</string>
+    <string name="tvUserName">User Name</string>
+    <string name="lvUserName">User Name</string>
+    <string name="tvPassword">Password</string>
+    <string name="lvPassword">Password</string>
+    <string name="tvButton">LOGIN</string>
+    <string name="tvText">スマートテック・ベンチャーズ</string>
+</resources>
