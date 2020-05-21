@@ -1,0 +1,5 @@
+<resources>
+    <string name="button">YourAppName</string>
+    <string name="lvTextview">Textview</string>
+    <string name="pick_time">Pick Time</string>
+</resources>
