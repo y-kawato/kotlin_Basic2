@@ -5,38 +5,28 @@ import android.app.Dialog
 import android.content.DialogInterface
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 
-class testDialogFragment : DialogFragment() {
+class TestDialogFragment : DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val builder = AlertDialog.Builder(activity)
 
+        builder.setTitle(R.string.dialog_title)
+        builder.setMessage(R.string.dialog_msg)
+        builder.setPositiveButton(R.string.dialog_btn_ok, DialogButtonClickListener())
+        builder.setNegativeButton(R.string.dialog_btn_ng, DialogButtonClickListener())
 
-
-        builder.setPositiveButton(R.string.dialog_btn_ok, DialogButtonClickLIstener())
-
-        builder.setNegativeButton(R.string.dialog_btn_ng, DialogButtonClickLIstener())
-
-
-
-        val dialog = builder.create()
-        return dialog
+        return builder.create()
     }
-    private inner class DialogButtonClickLIstener : DialogInterface.OnClickListener {
+    private inner class DialogButtonClickListener : DialogInterface.OnClickListener {
         override fun onClick(dialog: DialogInterface, which: Int) {
             when(which) {
                 DialogInterface.BUTTON_POSITIVE ->
                     Log.i("MainActivity", "ok")
 
-
                 DialogInterface.BUTTON_NEGATIVE ->
                     Log.i("MainActivity", "cancel")
-
-
-
             }
         }
     }
-
 }

@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     }
     private inner class HelloListener : View.OnClickListener {
         override fun onClick(v: View?) {
-            val dialogFragment = testDialogFragment()
+            val dialogFragment = TestDialogFragment()
 
             dialogFragment.show(supportFragmentManager, "testDialogFragment")
         }

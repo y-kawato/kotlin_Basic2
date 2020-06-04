@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">test2.1.8</string>
     <string name="lvButton">ボタン</string>
-    <string name="dialog_btn_ok">注文</string>
-    <string name="dialog_btn_ng">キャンセル</string>
+    <string name="dialog_btn_ok">OK</string>
+    <string name="dialog_btn_ng">Cancel</string>
+    <string name="dialog_title">Title</string>
+    <string name="dialog_msg">Message</string>
 </resources>
