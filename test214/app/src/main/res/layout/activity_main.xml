@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/tv_name"
-        android:maxLength="30"/>
+        android:hint="@string/tv_name"
+        android:maxLength="30"
+        android:importantForAutofill="no" />
 
 </LinearLayout>

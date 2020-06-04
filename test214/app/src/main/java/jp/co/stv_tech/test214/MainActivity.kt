@@ -21,18 +21,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.i("MainActivity", "onCreate")
 
-        val editText = findViewById<EditText>(R.id.editText)
-
         container = findViewById<LinearLayout>(R.id.container)
-
         inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
     }
     override fun onTouchEvent(event: MotionEvent): Boolean {
         Log.i("MainActivity", "onTouchEvent")
 
-        inputMethodManager.hideSoftInputFromWindow(container.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS)
-
-
+        inputMethodManager.hideSoftInputFromWindow(container.windowToken, InputMethodManager.HIDE_NOT_ALWAYS)
         container.requestFocus()
 
         return false
