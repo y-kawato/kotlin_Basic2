@@ -19,14 +19,14 @@ class MainActivity(private val RESULT_SUBACTIVITY: Int = 1000) : AppCompatActivi
 
         button.setOnClickListener {
             if (editText.text != null) {
-                //SubActivityからの返しを受け取る
+
                 val intent = Intent(applicationContext, SubActivity::class.java)
-                // エディットテキストのテキストを取得
+
                 val str = editText.text.toString()
                 Log.d("debug",str)
 
                 intent.putExtra(EXTRA_MESSAGE, str)
-                //帰ってくるリクエストコードを設定
+                
                 startActivityForResult(intent, RESULT_SUBACTIVITY)
 
                 editText.setText("")
