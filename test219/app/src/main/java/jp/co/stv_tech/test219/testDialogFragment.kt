@@ -12,7 +12,6 @@ class TestDialogFragment : DialogFragment() {
         builder.setItems(R.array.SNS) { _, which ->
             val sns = resources.getStringArray(R.array.SNS)
             println(sns[which])
-
             }
         return builder.create()
     }
