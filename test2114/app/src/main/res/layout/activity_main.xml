@@ -8,11 +8,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-
-
-
-
     <Button
         android:id="@+id/button"
         android:text="@string/move"

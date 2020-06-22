@@ -11,18 +11,13 @@ class SubActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sub)
 
-        // to get message from MainActivity
-        val intent = getIntent()
-
-
+        val intent = intent
 
         button.setOnClickListener{
             val intentSub = Intent()
 
-
             setResult(Activity.RESULT_OK, intentSub)
             finish()
         }
-
     }
 }
