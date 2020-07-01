@@ -1,11 +1,10 @@
 package jp.co.stv_tech.test2115
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import kotlinx.android.synthetic.main.activity_main.button
-import kotlinx.android.synthetic.main.activity_main.editText
+import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity(private val RESULT_SUBACTIVITY: Int = 1000) : AppCompatActivity() {
 
@@ -33,5 +32,4 @@ class MainActivity(private val RESULT_SUBACTIVITY: Int = 1000) : AppCompatActivi
             }
         }
     }
-
 }
