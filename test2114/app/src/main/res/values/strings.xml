@@ -2,8 +2,6 @@
     <string name="button">YourAppName</string>
     <string name="main">Main Activity</string>
     <string name="sub">Sub Activity</string>
-
-
     <string name="move">move</string>
     <string name="back">back</string>
 </resources>
