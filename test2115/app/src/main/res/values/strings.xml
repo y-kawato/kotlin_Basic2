@@ -1,0 +1,9 @@
+<resources>
+    <string name="button">YourAppName</string>
+    <string name="main">Main Activity</string>
+    <string name="sub">Sub Activity</string>
+    <string name="hint1">Message to Sub</string>
+    <string name="from_main">"from Main"</string>
+    <string name="to_sub">"  to Sub"</string>
+    <string name="move">move</string>
+</resources>
